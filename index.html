@@ -1024,7 +1024,9 @@
     </main>
 
     <footer class="container py-3 my-4 border-top">
-      <p class="text-center text-body-secondary">© 2023 Inosoft Bootcamp</p>
+      <p class="text-center text-body-secondary">
+        © <span id="year"></span> Inosoft Bootcamp
+      </p>
     </footer>
 
     <script
@@ -1032,5 +1034,12 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const date = new Date();
+      let year = date.getFullYear();
+
+      const yearText = document.getElementById("year");
+      yearText.innerText = year;
+    </script>
   </body>
 </html>
