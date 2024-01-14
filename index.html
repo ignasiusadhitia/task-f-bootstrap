@@ -17,50 +17,106 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header
-      class="container d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom"
-    >
-      <a
-        href="/"
-        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-      >
-        <span class="fs-4 fw-bold"
-          ><span class="text-primary">I</span>nosoft.</span
-        >
-      </a>
+    <!-- class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3" -->
+    <header class="container">
+      <nav class="navbar navbar-expand-lg" aria-label="Offcanvas navbar large">
+        <div class="container-fluid align-items-center px-0">
+          <a
+            href="/"
+            class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+          >
+            <span class="fs-4 fw-bold"
+              ><span class="text-primary">I</span>nosoft.</span
+            >
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar2"
+            aria-controls="offcanvasNavbar2"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar2"
+            aria-labelledby="offcanvasNavbar2Label"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbar2Label">
+                <span class="fs-4 fw-bold"
+                  ><span class="text-primary">I</span>nosoft.</span
+                >
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-dark">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#about" class="nav-link text-dark">About</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#testimonials" class="nav-link text-dark"
+                    >Testimonials</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#faqs" class="nav-link text-dark">FAQs</a>
+                </li>
+              </ul>
 
-      <ul class="nav nav-pills fw-light">
-        <li class="nav-item">
-          <a href="#" class="nav-link text-dark">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#about" class="nav-link text-dark">About</a>
-        </li>
-        <li class="nav-item">
-          <a href="#testimonials" class="nav-link text-dark">Testimonials</a>
-        </li>
-        <li class="nav-item">
-          <a href="#faqs" class="nav-link text-dark">FAQs</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="btn btn-outline-primary fw-light px-4">Login</a>
-        </li>
-      </ul>
+              <button class="btn btn-outline-primary px-4" type="submit">
+                Login
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
       <section class="py-5 bg-light">
-        <div class="container row mx-auto">
-          <div class="col-lg-6 col-md-8">
-            <h1 class="display-3 fw-bold">
-              The
-              <span class="text-primary">Code</span>
-              to Your Dream Job.
-            </h1>
+        <div class="container mx-auto">
+          <div class="row align-items-center g">
+            <div class="col-lg-6 pt-lg-3">
+              <h1 class="display-3 fw-bold">
+                The
+                <span class="text-primary">Code</span>
+                <br />
+                to Your Dream Job.
+              </h1>
 
-            <a href="#" class="btn btn-primary my-5 btn-lg px-5 py-3 fw-bold"
-              >Daftar Sekarang</a
-            >
+              <p class="lead">
+                Persiapkan dirimu menjadi seorang IT profesional, tidak hanya
+                melalui teori tetapi juga dengan pengalaman langsung bekerja di
+                project IT.
+              </p>
+
+              <a
+                href="#register"
+                class="btn btn-primary my-5 btn-lg px-5 py-3 fw-bold"
+                >Daftar Sekarang</a
+              >
+            </div>
+            <div class="col-lg-5 offset-lg-1 p-0 overflow-hidden">
+              <img
+                class="rounded-lg-3"
+                src="/assets/img/hero.png"
+                alt="coding-classes-for-kids-in-Ibadan"
+                width="100%"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -69,7 +125,7 @@
         <div class="container mx-auto">
           <div class="row">
             <h2 class="text-primary text-center text-uppercase fs-6">Why Us</h2>
-            <h3 class="display-4 text-capitalize fw-bold text-center py-3">
+            <h3 class="display-6 text-capitalize fw-bold text-center py-3">
               Mengapa memilih Inosoft Bootcamp?
             </h3>
           </div>
@@ -209,7 +265,7 @@
             <h2 class="text-primary text-center text-uppercase fs-6">
               Our Courses
             </h2>
-            <h3 class="display-4 text-capitalize fw-bold text-center py-3">
+            <h3 class="display-6 text-capitalize fw-bold text-center py-3">
               Pelajari Keterampilan yang Dibutuhkan
             </h3>
           </div>
@@ -304,24 +360,206 @@
       </section>
 
       <section class="py-5">
-        <div class="container row mx-auto">
-          <h2 class="text-primary text-center text-uppercase fs-6">
-            How it Works
-          </h2>
-          <h3 class="display-4 text-capitalize fw-bold text-center py-3">
-            Bagaimana Inosoft Bootcamp Berjalan?
-          </h3>
+        <div class="container mx-auto">
+          <div class="row">
+            <h2 class="text-primary text-center text-uppercase fs-6">
+              How it Works
+            </h2>
+            <h3 class="display-6 text-capitalize fw-bold text-center py-3">
+              Bagaimana Inosoft Bootcamp Berjalan?
+            </h3>
+          </div>
+          <div
+            class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5"
+          >
+            <div class="col d-flex flex-column align-items-start gap-2">
+              <h2 class="fw-bold text-body-emphasis">
+                Left-aligned title explaining these awesome features
+              </h2>
+              <p class="text-body-secondary">
+                Paragraph of text beneath the heading to explain the heading.
+                We'll add onto it with another sentence and probably just keep
+                going until we run out of words.
+              </p>
+              <a href="#" class="btn btn-primary btn-lg">Primary button</a>
+            </div>
+
+            <div class="col">
+              <div class="row row-cols-1 row-cols-sm-2 g-4">
+                <div class="col d-flex flex-column gap-2">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+                  >
+                    <svg class="bi" width="1em" height="1em">
+                      <use xlink:href="#collection"></use>
+                    </svg>
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">
+                    Featured title
+                  </h4>
+                  <p class="text-body-secondary">
+                    Paragraph of text beneath the heading to explain the
+                    heading.
+                  </p>
+                </div>
+
+                <div class="col d-flex flex-column gap-2">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+                  >
+                    <svg class="bi" width="1em" height="1em">
+                      <use xlink:href="#gear-fill"></use>
+                    </svg>
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">
+                    Featured title
+                  </h4>
+                  <p class="text-body-secondary">
+                    Paragraph of text beneath the heading to explain the
+                    heading.
+                  </p>
+                </div>
+
+                <div class="col d-flex flex-column gap-2">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+                  >
+                    <svg class="bi" width="1em" height="1em">
+                      <use xlink:href="#speedometer"></use>
+                    </svg>
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">
+                    Featured title
+                  </h4>
+                  <p class="text-body-secondary">
+                    Paragraph of text beneath the heading to explain the
+                    heading.
+                  </p>
+                </div>
+
+                <div class="col d-flex flex-column gap-2">
+                  <div
+                    class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3"
+                  >
+                    <svg class="bi" width="1em" height="1em">
+                      <use xlink:href="#table"></use>
+                    </svg>
+                  </div>
+                  <h4 class="fw-semibold mb-0 text-body-emphasis">
+                    Featured title
+                  </h4>
+                  <p class="text-body-secondary">
+                    Paragraph of text beneath the heading to explain the
+                    heading.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section class="py-5 bg-light">
-        <div class="container row mx-auto">
-          <h2 class="text-primary text-center text-uppercase fs-6">
-            Our Mentors
-          </h2>
-          <h3 class="display-4 text-capitalize fw-bold text-center py-3">
-            Belajar dari yang Terbaik
-          </h3>
+        <div class="container mx-auto">
+          <div class="row">
+            <h2 class="text-primary text-center text-uppercase fs-6">
+              Our Mentors
+            </h2>
+            <h3 class="display-6 text-capitalize fw-bold text-center py-3">
+              Belajar dari yang Terbaik
+            </h3>
+          </div>
+          <div
+            class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"
+          >
+            <div class="col">
+              <div
+                class="overflow-hidden text-bg-dark rounded-4"
+                style="
+                  background-image: url('assets/img/mentor-1.jpg');
+                  background-position: center;
+                  height: 500px;
+                "
+              >
+                <div class="d-flex flex-column h-100 p-4 pb-3 text-shadow-1">
+                  <div class="d-flex card mt-auto rounded-4 border-0 bg-light">
+                    <div class="card-body">
+                      <h4 class="card-title text-primary mb-3">Ahmad Fauzi</h4>
+                      <span
+                        class="badge rounded-pill px-4 py-2"
+                        style="
+                          background-color: hsla(
+                            160.50955414012742,
+                            63.05%,
+                            48.82%,
+                            1
+                          );
+                        "
+                        >Co-Founder & CEO</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div
+                class="overflow-hidden text-bg-dark rounded-4"
+                style="
+                  background-image: url('assets/img/mentor-2.jpg');
+                  background-position: center;
+                  height: 500px;
+                "
+              >
+                <div class="d-flex flex-column h-100 p-4 pb-3 text-shadow-1">
+                  <div class="d-flex card mt-auto rounded-4 border-0">
+                    <div class="card-body">
+                      <h4 class="card-title text-primary mb-3">
+                        Anindita Indriati
+                      </h4>
+                      <span
+                        class="badge rounded-pill px-4 py-2"
+                        style="
+                          background-color: hsla(
+                            349.20000000000005,
+                            100%,
+                            70.59%,
+                            1
+                          );
+                        "
+                        >Senior Software Engineer</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div
+                class="overflow-hidden text-bg-dark rounded-4"
+                style="
+                  background-image: url('assets/img/mentor-3.jpg');
+                  background-position: center;
+                  height: 500px;
+                "
+              >
+                <div class="d-flex flex-column h-100 p-4 pb-3 text-shadow-1">
+                  <div class="d-flex card mt-auto rounded-4 border-0">
+                    <div class="card-body">
+                      <h4 class="card-title text-primary mb-3">Dwiputra Aji</h4>
+                      <span
+                        class="badge rounded-pill px-4 py-2"
+                        style="background-color: hsla(204, 100%, 50.5%, 1)"
+                        >UI/UX Designer</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -330,261 +568,375 @@
           <h2 class="text-primary text-center text-uppercase fs-6">
             Testimonials
           </h2>
-          <h3 class="display-4 text-capitalize fw-bold text-center py-3">
+          <h3 class="display-6 text-capitalize fw-bold text-center py-3">
             Apa Kata Alumni Kami?
           </h3>
+          <div class="row g-4 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+              <div
+                class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+              >
+                <img
+                  src="assets/img/testimonial-1.jpg"
+                  class="rounded-circle"
+                  style="width: 75px"
+                  alt="testimonial-1"
+                />
+              </div>
+              <div>
+                <p>
+                  "Inosoft Bootcamp benar-benar mengubah hidup saya. Sebelum
+                  mengikuti program ini, saya hanya seorang lulusan SMA yang
+                  tidak tahu apa-apa tentang coding. Namun, setelah mengikuti
+                  program ini, saya berhasil mendapatkan pekerjaan sebagai
+                  software engineer di perusahaan teknologi terkemuka. Saya
+                  sangat berterima kasih kepada Inosoft Bootcamp atas kesempatan
+                  yang diberikan kepada saya."
+                </p>
+                <h6 class="text-primary text-end">
+                  Mark<span class="text-secondary fw-normal"
+                    >, Software Engineer Google</span
+                  >
+                </h6>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div
+                class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+              >
+                <img
+                  src="assets/img/testimonial-2.jpg"
+                  class="rounded-circle"
+                  style="width: 75px"
+                  alt="testimonial-2"
+                />
+              </div>
+              <div>
+                <p>
+                  "Inosoft Bootcamp adalah program yang sangat intensif dan
+                  bermanfaat. Saya sangat terkesan dengan kualitas materi dan
+                  mentor yang diberikan. Saya juga sangat menyukai komunitas
+                  yang dibangun oleh Inosoft Bootcamp. Saya merasa sangat
+                  didukung dan termotivasi oleh sesama peserta."
+                </p>
+                <h6 class="text-primary text-end">
+                  Ajeng<span class="text-secondary fw-normal"
+                    >, Frontend Developer Tokopedia</span
+                  >
+                </h6>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div
+                class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
+              >
+                <img
+                  src="assets/img/testimonial-3.jpg"
+                  class="rounded-circle"
+                  style="width: 75px"
+                  alt="testimonial-3"
+                />
+              </div>
+              <div>
+                <p>
+                  "Inosoft Bootcamp adalah investasi yang sangat berharga. Saya
+                  belajar banyak hal tentang coding dan pengembangan karir. Saya
+                  juga mendapatkan banyak koneksi yang dapat membantu saya dalam
+                  karier saya. Saya sangat merekomendasikan Inosoft Bootcamp
+                  kepada siapa saja yang ingin berkarier di bidang teknologi."
+                </p>
+                <h6 class="text-primary text-end">
+                  Josh<span class="text-secondary fw-normal"
+                    >, Data Analyst Bukalapak</span
+                  >
+                </h6>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="faqs" class="py-5 bg-light">
         <div class="container row mx-auto">
           <h2 class="text-primary text-center text-uppercase fs-6">FAQs</h2>
-          <h3 class="display-4 text-capitalize fw-bold text-center py-3">
+          <h3 class="display-6 text-capitalize fw-bold text-center py-3">
             Pertanyaan Umum
           </h3>
+          <div
+            class="accordion pt-5 col-md-7 col-lg-8 mx-auto"
+            id="accordionExample"
+          >
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button fw-bold text-primary text-capitalize"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Berapa biaya Inosoft Bootcamp?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Inosoft Bootcamp adalah program pelatihan IT gratis.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fw-bold text-primary"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Berapa lama durasi Inosoft Bootcamp?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Inosoft Bootcamp berlangsung selama 4 bulan.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fw-bold text-primary"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Apa saja materi yang dipelajari di Inosoft Bootcamp?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Inosoft Bootcamp akan membekali peserta dengan keterampilan
+                  teknis dan non-teknis yang dibutuhkan untuk menjadi IT
+                  Profesional. Materi yang dipelajari meliputi:
+                  <ul>
+                    <li>
+                      <strong>Keterampilan teknis:</strong> HTML, CSS,
+                      JavaScript, PHP, Laravel, dan database
+                    </li>
+                    <li>
+                      <strong>Keterampilan non-teknis:</strong> problem solving,
+                      komunikasi, dan kerja tim
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fw-bold text-primary"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  Apa saja persyaratan untuk mengikuti Inosoft Bootcamp?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Persyaratan untuk mengikuti Inosoft Bootcamp adalah:
+                  <ul>
+                    <li>Minimal SMA/SMK sederajat</li>
+                    <li>Memiliki passion di bidang IT</li>
+                    <li>Berkomitmen untuk menyelesaikan program pelatihan</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed fw-bold text-primary"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  Bagaimana cara mendaftar di Inosoft Bootcamp?
+                </button>
+              </h2>
+              <div
+                id="collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Untuk mendaftar di Inosoft Bootcamp, Anda dapat mengunjungi
+                  website Inosoft Bootcamp dan mengisi formulir pendaftaran.
+                  Berikut adalah langkah-langkah untuk mendaftar di Inosoft
+                  Bootcamp:
+                  <ol>
+                    <li>Kunjungi website Inosoft Bootcamp.</li>
+                    <li>Klik tombol "Daftar Sekarang".</li>
+                    <li>Isi formulir pendaftaran dengan data yang valid.</li>
+                    <li>Klik tombol "Kirim".</li>
+                  </ol>
+                  Setelah Anda mendaftar, Anda akan menerima email konfirmasi
+                  dari Inosoft Bootcamp. Email konfirmasi tersebut akan berisi
+                  informasi tentang proses seleksi.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="py-5">
+      <section id="register" class="py-5">
         <div class="container row mx-auto">
           <h2 class="text-primary text-center text-uppercase fs-6">
             Registration
           </h2>
-          <h3 class="display-4 text-capitalize fw-bold text-center py-3">
+          <h3 class="display-6 text-capitalize fw-bold text-center py-3">
             Daftar Sekarang
           </h3>
-        </div>
-      </section>
-
-      <!-- <div class="container px-4 py-5" id="custom-cards">
-          <h2 class="pb-2 border-bottom">Custom cards</h2>
-
-          <div
-            class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5"
-          >
-            <div class="col">
-              <div
-                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                style="background-image: url('unsplash-photo-1.jpg')"
-              >
-                <div
-                  class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
-                >
-                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                    Short title, long jacket
-                  </h3>
-                  <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                      <img
-                        src="https://github.com/twbs.png"
-                        alt="Bootstrap"
-                        width="32"
-                        height="32"
-                        class="rounded-circle border border-white"
-                      />
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                      <svg class="bi me-2" width="1em" height="1em">
-                        <use xlink:href="#geo-fill"></use>
-                      </svg>
-                      <small>Earth</small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                      <svg class="bi me-2" width="1em" height="1em">
-                        <use xlink:href="#calendar3"></use>
-                      </svg>
-                      <small>3d</small>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div
-                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                style="background-image: url('unsplash-photo-2.jpg')"
-              >
-                <div
-                  class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
-                >
-                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                    Much longer title that wraps to multiple lines
-                  </h3>
-                  <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                      <img
-                        src="https://github.com/twbs.png"
-                        alt="Bootstrap"
-                        width="32"
-                        height="32"
-                        class="rounded-circle border border-white"
-                      />
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                      <svg class="bi me-2" width="1em" height="1em">
-                        <use xlink:href="#geo-fill"></use>
-                      </svg>
-                      <small>Pakistan</small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                      <svg class="bi me-2" width="1em" height="1em">
-                        <use xlink:href="#calendar3"></use>
-                      </svg>
-                      <small>4d</small>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div
-                class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                style="background-image: url('unsplash-photo-3.jpg')"
-              >
-                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                  <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                    Another longer title belongs here
-                  </h3>
-                  <ul class="d-flex list-unstyled mt-auto">
-                    <li class="me-auto">
-                      <img
-                        src="https://github.com/twbs.png"
-                        alt="Bootstrap"
-                        width="32"
-                        height="32"
-                        class="rounded-circle border border-white"
-                      />
-                    </li>
-                    <li class="d-flex align-items-center me-3">
-                      <svg class="bi me-2" width="1em" height="1em">
-                        <use xlink:href="#geo-fill"></use>
-                      </svg>
-                      <small>California</small>
-                    </li>
-                    <li class="d-flex align-items-center">
-                      <svg class="bi me-2" width="1em" height="1em">
-                        <use xlink:href="#calendar3"></use>
-                      </svg>
-                      <small>5d</small>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="py-5">
-          <div class="container">
-            <form class="row g-3">
-              <div class="col-md-6">
-                <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4" />
-              </div>
-              <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Password</label>
-                <input
-                  type="password"
-                  class="form-control"
-                  id="inputPassword4"
-                />
-              </div>
-              <div class="col-12">
-                <label for="inputAddress" class="form-label">Address</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputAddress"
-                  placeholder="1234 Main St"
-                />
-              </div>
-              <div class="col-12">
-                <label for="inputAddress2" class="form-label">Address 2</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="inputAddress2"
-                  placeholder="Apartment, studio, or floor"
-                />
-              </div>
-              <div class="col-md-6">
-                <label for="inputCity" class="form-label">City</label>
-                <input type="text" class="form-control" id="inputCity" />
-              </div>
-              <div class="col-md-4">
-                <label for="inputState" class="form-label">State</label>
-                <select id="inputState" class="form-select">
-                  <option selected>Choose...</option>
-                  <option>...</option>
-                </select>
-              </div>
-              <div class="col-md-2">
-                <label for="inputZip" class="form-label">Zip</label>
-                <input type="text" class="form-control" id="inputZip" />
-              </div>
-              <fieldset class="row my-3">
-                <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                <div class="col-sm-10">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="gridRadios"
-                      id="gridRadios1"
-                      value="option1"
-                      checked
-                    />
-                    <label class="form-check-label" for="gridRadios1">
-                      First radio
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="gridRadios"
-                      id="gridRadios2"
-                      value="option2"
-                    />
-                    <label class="form-check-label" for="gridRadios2">
-                      Second radio
-                    </label>
-                  </div>
-                  <div class="form-check disabled">
-                    <input
-                      class="form-check-input"
-                      type="radio"
-                      name="gridRadios"
-                      id="gridRadios3"
-                      value="option3"
-                      disabled
-                    />
-                    <label class="form-check-label" for="gridRadios3">
-                      Third disabled radio
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
-              <div class="col-12">
-                <div class="form-check">
+          <div class="col-md-7 col-lg-8 mx-auto">
+            <form class="needs-validation" novalidate="">
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">Name</label>
                   <input
-                    class="form-check-input"
-                    type="checkbox"
-                    id="gridCheck"
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="Enter Name"
+                    value=""
+                    required=""
                   />
-                  <label class="form-check-label" for="gridCheck">
-                    Check me out
-                  </label>
+                  <div class="invalid-feedback">Nama tidak boleh kosong.</div>
+                </div>
+
+                <div class="col-sm-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter Email"
+                  />
+                  <div class="invalid-feedback">Email tidak boleh kosong.</div>
+                </div>
+
+                <div class="col-md-6">
+                  <div>
+                    <label for="phone" class="form-label">Phone</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phone"
+                      placeholder="Enter Phone"
+                      required=""
+                    />
+                    <div class="invalid-feedback">
+                      Nomor telepon tidak boleh kosong.
+                    </div>
+                  </div>
+                  <div class="my-3">
+                    <label class="mb-2">Gender:</label>
+                    <div class="d-md-flex gap-4 align-items-center">
+                      <div class="d-flex gap-2">
+                        <div class="form-check">
+                          <input
+                            id="credit"
+                            name="gender"
+                            type="radio"
+                            class="form-check-input"
+                            checked=""
+                            required=""
+                          />
+                          <label class="form-check-label" for="male"
+                            >Male</label
+                          >
+                        </div>
+                        <div class="form-check">
+                          <input
+                            id="debit"
+                            name="gender"
+                            type="radio"
+                            class="form-check-input"
+                            required=""
+                          />
+                          <label class="form-check-label" for="female"
+                            >Female</label
+                          >
+                        </div>
+                      </div>
+
+                      <select
+                        class="form-select mt-4 mt-md-0"
+                        id="country"
+                        required=""
+                      >
+                        <option value="">Choose class...</option>
+                        <option>Frontend</option>
+                        <option>Backend</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid country.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="motivation" class="form-label">Motivation</label>
+                  <textarea
+                    class="form-control"
+                    id="motivation"
+                    placeholder="Enter Motivation"
+                    required=""
+                    rows="4"
+                  ></textarea>
+                  <div class="invalid-feedback">
+                    Motivasi tidak boleh kosong.
+                  </div>
                 </div>
               </div>
-              <div class="col-12">
-                <button type="submit" class="btn btn-primary">Sign in</button>
+
+              <div class="d-grid d-md-flex justify-content-md-end mt-3">
+                <button
+                  class="btn col-md-4 btn-primary btn-lg fw-bold"
+                  type="submit"
+                >
+                  Kirim
+                </button>
               </div>
             </form>
           </div>
-        </div> -->
+        </div>
+      </section>
     </main>
 
     <footer class="container py-3 my-4 border-top">
